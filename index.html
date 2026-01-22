@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Abdelghani Moujniba</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">MyPortfolio</div>
+    <div class="logo">Abdelghani</div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#home">Accueil</a></li>
@@ -21,47 +22,66 @@
     </ul>
   </nav>
 
-  <!-- HEADER -->
+  <!-- HERO HEADER -->
   <header id="home" class="hero">
     <img src="https://github.com/abdelghanimj/abdelghani-dev.github.io/blob/main/moujniba.jpg?raw=true" class="profile-img" alt="Ma photo">
-
     <div class="hero-text">
       <h1>Abdelghani Moujniba</h1>
-      <p>Développeur Web Full Stack</p>
+      <p>Développeur Web Full Stack | 23 ans</p>
+      <div class="buttons">
+        <a href="https://github.com/abdelghanimj" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdelghani-moujniba-9a6597312/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="https://raw.githubusercontent.com/abdelghanimj/abdelghani-dev/refs/heads/main/cv-moujniba.pdf" download class="btn btn-primary">Télécharger CV</a>
+      </div>
     </div>
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Je suis un développeur passionné par le web et le mobile. J'aime créer des applications modernes et efficaces.</p>
+  <section id="about" class="section about">
+    <h2>À propos de moi</h2>
+    <p>
+      Technicien spécialisé en développement digital option Web Full Stack, licencié en développement des médias numériques.  
+      Ponctuel, motivé et passionné par le développement web et mobile.
+    </p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="section skills">
     <h2>Compétences</h2>
-    <ul>
-      <li>HTML / CSS / JavaScript</li>
-      <li>Java / Spring Boot</li>
-      <li>Angular</li>
-      <li>Android (Java)</li>
-    </ul>
+    <div class="skills-container">
+      <div class="skill">HTML / CSS / JS</div>
+      <div class="skill">PHP / Laravel / ReactJS</div>
+      <div class="skill">Java (basique)</div>
+      <div class="skill">MySQL</div>
+    </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="section projects">
     <h2>Projets</h2>
-    <ul>
-      <li>OujdaShop - Application Android</li>
-      <li>Gestion de Produits - Spring Boot</li>
-      <li>Site e-commerce</li>
-    </ul>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="OujdaShop">
+        <h3>OujdaShop</h3>
+        <p>Application Android</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Gestion Produits">
+        <h3>Gestion Produits</h3>
+        <p>Spring Boot / E-commerce</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Stage Commune">
+        <h3>Stage Commune Taourirt</h3>
+        <p>Projets académiques Laravel / ReactJS</p>
+      </div>
+    </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="section contact">
     <h2>Contact</h2>
-    <p>Email : tonemail@gmail.com</p>
+    <p>Email : <a href="mailto:moujnibaabdelghani@gmail.com">moujnibaabdelghani@gmail.com</a></p>
   </section>
 
   <!-- FOOTER -->
@@ -73,10 +93,7 @@
   <script>
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
-
-    toggle.addEventListener("click", () => {
-      navLinks.classList.toggle("show");
-    });
+    toggle.addEventListener("click", () => navLinks.classList.toggle("show"));
   </script>
 
 </body>
