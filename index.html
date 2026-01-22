@@ -2,31 +2,81 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Abdelghani Moujniba</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Abdelghani Moujniba</h1>
-    <p>Développeur Web Full Stack</p>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="home" class="hero">
+    <img src="/moujniba.jpg" alt="Ma photo" class="profile-img">
+    <div class="hero-text">
+      <h1>Abdelghani Moujniba</h1>
+      <p>Développeur Web Full Stack</p>
+    </div>
   </header>
 
-  <section>
+  <!-- ABOUT -->
+  <section id="about">
     <h2>À propos</h2>
-    <p>Je suis développeur web passionné par les technologies modernes.</p>
+    <p>Je suis un développeur passionné par le web et le mobile. J'aime créer des applications modernes et efficaces.</p>
   </section>
 
-  <section>
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Compétences</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>Java / Spring Boot</li>
+      <li>Angular</li>
+      <li>Android (Java)</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
     <h2>Projets</h2>
     <ul>
-      <li>Application Android OujdaShop</li>
-      <li>Gestion de produits Spring Boot</li>
+      <li>OujdaShop - Application Android</li>
+      <li>Gestion de Produits - Spring Boot</li>
       <li>Site e-commerce</li>
     </ul>
   </section>
 
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : tonemail@gmail.com</p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>© 2026 - Abdelghani</p>
+    <p>© 2026 - Abdelghani Moujniba</p>
   </footer>
+
+  <!-- JS MENU -->
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+
 </body>
 </html>
