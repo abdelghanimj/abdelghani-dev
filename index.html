@@ -18,21 +18,19 @@
       <li><a href="#about">À propos</a></li>
       <li><a href="#skills">Compétences</a></li>
       <li><a href="#projects">Projets</a></li>
+      <li><a href="#education">Formation</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- HERO HEADER -->
   <header id="home" class="hero">
+    <div id="particles-js"></div>
     <img src="https://github.com/abdelghanimj/abdelghani-dev.github.io/blob/main/moujniba.jpg?raw=true" class="profile-img" alt="Ma photo">
     <div class="hero-text">
       <h1>Abdelghani Moujniba</h1>
-      <p>Développeur Web Full Stack | 23 ans</p>
-      <div class="buttons">
-        <a href="https://github.com/abdelghanimj" target="_blank" class="btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/abdelghani-moujniba-9a6597312/" target="_blank" class="btn btn-secondary">LinkedIn</a>
-        <a href="https://raw.githubusercontent.com/abdelghanimj/abdelghani-dev/refs/heads/main/cv-moujniba.pdf" download class="btn btn-primary">Télécharger CV</a>
-      </div>
+      <p>Développeur Web Full Stack</p>
+     
     </div>
   </header>
 
@@ -40,19 +38,81 @@
   <section id="about" class="section about">
     <h2>À propos de moi</h2>
     <p>
-      Technicien spécialisé en développement digital option Web Full Stack, licencié en développement des médias numériques.  
-      Ponctuel, motivé et passionné par le développement web et mobile.
+      Développeur Web Full Stack, technicien spécialisé en développement digital et licencié en développement des médias numériques.  
+      Passionné par la création d’applications web et mobiles performantes, avec un fort intérêt pour les technologies modernes et les bonnes pratiques de développement.  
+      Sérieux, autonome et orienté solution, je cherche constamment à améliorer mes compétences et à relever de nouveaux défis techniques.
     </p>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="section skills">
-    <h2>Compétences</h2>
+    <h2>Compétences Techniques</h2>
     <div class="skills-container">
-      <div class="skill">HTML / CSS / JS</div>
-      <div class="skill">PHP / Laravel / ReactJS</div>
-      <div class="skill">Java (basique)</div>
-      <div class="skill">MySQL</div>
+
+      <!-- Frontend -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
+        <p>Bootstrap</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS">
+        <p>ReactJS</p>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <p>PHP</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel">
+        <p>Laravel</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        <p>Java (basique)</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <p>Python</p>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <p>MySQL</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        <p>MongoDB</p>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <p>Git</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <p>GitHub</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode">
+        <p>VS Code</p>
+      </div>
+
     </div>
   </section>
 
@@ -60,28 +120,67 @@
   <section id="projects" class="section projects">
     <h2>Projets</h2>
     <div class="projects-container">
+
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="OujdaShop">
+        <div class="project-icon android">📱</div>
         <h3>OujdaShop</h3>
-        <p>Application Android</p>
+        <p>Application Android – Java</p>
       </div>
+
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Gestion Produits">
-        <h3>Gestion Produits</h3>
-        <p>Spring Boot / E-commerce</p>
+        <div class="project-icon web">🛒</div>
+        <h3>Gestion de Produits</h3>
+        <p>Site E-commerce – Laravel</p>
       </div>
+
       <div class="project-card">
-        <img src="https://via.placeholder.com/300x200" alt="Stage Commune">
-        <h3>Stage Commune Taourirt</h3>
-        <p>Projets académiques Laravel / ReactJS</p>
+        <div class="project-icon fullstack">💻</div>
+        <h3>Stage – Commune Taourirt</h3>
+        <p>Gestion des Réclamations – Laravel & ReactJS</p>
       </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <h2>Formation</h2>
+    <div class="education-container">
+
+      <div class="education-card">
+        <img class="edu-icon" src="https://cdn-icons-png.flaticon.com/512/254/254024.png" alt="Bac">
+        <h3>Baccalauréat</h3>
+        <p>Science Physique et Chimie – Taourirt</p>
+        <p>Année: 2020</p>
+      </div>
+
+      <div class="education-card">
+        <img class="edu-icon" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Technicien">
+        <h3>Technicien spécialisé</h3>
+        <p>Développement digital option Web Full Stack</p>
+      </div>
+
+      <div class="education-card">
+        <img class="edu-icon" src="https://cdn-icons-png.flaticon.com/512/1973/1973807.png" alt="Licence">
+        <h3>Licence</h3>
+        <p>Développement des médias numériques</p>
+      </div>
+
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
     <h2>Contact</h2>
-    <p>Email : <a href="mailto:moujnibaabdelghani@gmail.com">moujnibaabdelghani@gmail.com</a></p>
+    <p class="contact-text">
+      Vous avez une opportunité, un stage ou un projet à proposer ?  
+      Je suis disponible et ouvert à toute collaboration.
+    </p>
+    <div class="contact-info">
+      <a href="mailto:moujnibaabdelghani@gmail.com" class="contact-item">📧 Email</a>
+      <a href="https://github.com/abdelghanimj" class="contact-item">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/abdelghani-moujniba-9a6597312/" class="contact-item">🔗 LinkedIn</a>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -90,11 +189,12 @@
   </footer>
 
   <!-- JS MENU -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
   <script>
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
     toggle.addEventListener("click", () => navLinks.classList.toggle("show"));
   </script>
-
 </body>
 </html>
